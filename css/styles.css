@@ -1,0 +1,12 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/f7/4c/7b/f74c7b0b2f3c79d860dbd9f19d08493e.jpg);
+}
+.centered-image {
+  margin: auto;
+  width: fit-content;
+  height: auto;
+  display: block;
+}
+.centered-text {
+  text-align: center;
+}
