@@ -10,15 +10,42 @@
 <body>
   <div class= "container">
     <div class="jumbotron">
-    <h1>Cinemagic!</h1>
-      <h3>You love Cinemagic</h3>
+      <div class="centered-image"> 
+        <img src="images/CinemagicLogo.jpg" alt="an image of Cinemagic's Logo">
+      </div>
+      <h3>You love Cinemagic,</h3>
         <h5><em>Where movies and magic come together!</em></h5>
         <br>
         <br>
         <br>
         <h6>Pick your feature film:</h6>
           <form id="movie-form">
-            
+            <select class="form-control" id="film">
+              <option>The Breakfast Club</option>
+              <option><strong>NEW RELEASE</strong> She-Hulk</option>
+            </select>
+
+
+
+            <div class="form-group">
+              <label>
+                <input type="radio" name="show-time" value="matinee" checked>
+                1:00PM PST
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="radio" name="show-time" value="evening">
+                8:00PM PST
+              </label>
+            </div>
+
+
+            <select class="form-control" id="age">
+              <option>Adult</option>
+              <option>Senior Discount <em>(65+)</em></option>
+            </select>
+            </div>
           </form>
 
 
@@ -27,5 +54,5 @@
 
     </div>
   </div>
-  </body>
+</body>
 </html
