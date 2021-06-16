@@ -37,8 +37,15 @@ function Ticket (ageId, cost) {
 
 
 $(document).ready(function() {
-  $("").submit(function(event){
+  $("button.btn-warning").click(function(event){
     event.preventDefault();
 
+
+    const baseCost= 10;
+    let finalTicketCost = 0 //unsure of value to list initially
+    let movieTitle = $("#film").val();
+    let time = $("input:radio[name=show-time]:checked").val();
+    let age = $("ageId").val();
+    
   });
 });
