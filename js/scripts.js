@@ -20,8 +20,9 @@ function Age (showTime, adult, senior) {
   this.senior= senior
 }
 
-function Ticket (ageId, cost) {
-  this.age= ageId
+function Ticket (adult, senior, cost) {
+  this.adult= adult
+  this.senior= senior
   this.cost= cost
 }
 
@@ -46,6 +47,25 @@ $(document).ready(function() {
     let movieTitle = $("#film").val();
     let time = $("input:radio[name=show-time]:checked").val();
     let age = $("ageId").val();
+
+    if (movieTitle === title1) && (time === matinee) && age === adult){
+      finalTicketCost = baseCost -3;
+    }else if (movieTitle === title1) && (time === matinee) && age === senior){
+      finalTicketCost = baseCost -5;
+    }else if (movieTitle === title1) && (time === evening) && age === adult){
+      finalTicketCost = baseCost;
+    {else if (movieTitle === title1) && (time === evening) && age === senior){
+      finalTicketCost = baseCost -2;
+    }else if (movieTitle === title2) && (time === matinee) && age === adult){
+      finalTicketCost = baseCost +2;
+    }else if (movieTitle === title2) && (time === matinee) && age === senior){
+      finalTicketCost = baseCost;
+    }else if (movieTitle === title2) && (time === evening) && age === adult){
+      finalTicketCost = baseCost +5;
+    }else if (movieTitle === title2) && (time === evening) && age === senior){
+      finalTicketCost = baseCost +3;
     
+
+    }
   });
 });
