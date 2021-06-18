@@ -21,8 +21,8 @@
       <h6>Pick your feature film:</h6>
       <form id="movie-form">
         <select class="form-control" id="film">
-          <option>The Breakfast Club</option>
-          <option>NEW RELEASE She-Hulk</option>
+          <option id="movie" value="title1">The Breakfast Club</option>
+          <option id="movie" value="title2">NEW RELEASE She-Hulk</option>
         </select>
 
 
@@ -42,17 +42,22 @@
 
 
         <select class="form-control" id="ageId">
-          <option>Adult</option>
-          <option>Senior Discount (65+)</option>
+          <option id="age" value="adult">Adult</option>
+          <option id="age" value="senior">Senior Discount (65+)</option>
         </select>
         </div>
         <button class="btn btn-warning" id="ticket-input">Get your Tickets!</button>
       </form>
       <hr>
       <ul id="printedTicket"><span id="ticket-output"</ul>
-
-
-
+      <div id="show-ticket">
+        <div class="col-md-6">
+          <p>Movie Title: <span class="movie-title"></span></p>
+          <p>Showtime: <span class="showtime"></span></p>
+          <p>Age: <span class="age"></span></p>
+          <p>Cost: <span class="cost"></span></p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
